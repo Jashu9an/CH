@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<yandex>
+    <logger>
+        <level>information</level>
+        <console>true</console>
+    </logger>
+
+    <http_listen_host>0.0.0.0</http_listen_host>
+    <tcp_listen_host>0.0.0.0</tcp_listen_host>
+    
+    <http_port>8123</http_port>
+    <tcp_port>9000</tcp_port>
+    
+    <prometheus>
+        <endpoint>/metrics</endpoint>
+        <port>9363</port>
+        <metrics>true</metrics>
+        <events>true</events>
+        <asynchronous_metrics>true</asynchronous_metrics>
+    </prometheus>
+    
+    <default_database>ecommerce</default_database>
+    
+    <users_config>users.xml</users_config>
+    <default_profile>default</default_profile>
+    <default_network_profile>default</default_network_profile>
+</yandex>

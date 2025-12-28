@@ -1,0 +1,23 @@
+<clickhouse>
+    <!-- Network configuration -->
+    <http_listen_host>0.0.0.0</http_listen_host>
+    <tcp_listen_host>0.0.0.0</tcp_listen_host>
+    
+    <!-- Enable Prometheus metrics exporter -->
+    <prometheus>
+        <endpoint>/metrics</endpoint>
+        <port>9363</port>
+        <metrics>true</metrics>
+        <events>true</events>
+        <asynchronous_metrics>true</asynchronous_metrics>
+    </prometheus>
+    
+    <!-- Database configuration -->
+    <default_database>ecommerce</default_database>
+    
+    <!-- Log configuration -->
+    <logger>
+        <level>information</level>
+        <console>true</console>
+    </logger>
+</clickhouse>
